@@ -1,5 +1,129 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 .swiper {
-  width: 650px !important;
-  height: 400px !important;
-  background-color: aqua;
+  width: 365px;
+  height: 900px;
+  margin-top: 300px;
+  background-image: url(/public/image/puzzleanimation.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: rgb(20, 183, 228);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.swiper-pagination-bullet {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  background: #e7e40c !important;
+  opacity: 1;
+  top: 550px;
+}
+
+.picthree {
+  margin-left: 1400px;
+  background-image: url(/public/logo512.jpg);
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.tthree {
+  margin-left: 1000px;
+}
+
+.sthree {
+  margin-left: 1000px;
+}
+
+#bp-768,
+#bp-1024 {
+  display: none;
+}
+
+#bp-768,
+#bp-1024 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 768px !important;
+  }
+
+  #bp-768 {
+    display: inline !important;
+  }
+
+  #bp-375,
+  #bp-1024 {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .swiper {
+    width: 1900px !important;
+  }
+
+  #bp-1024 {
+    display: inline !important;
+  }
+
+  #bp-375,
+  #bp-768 {
+    display: none !important;
+  }
 }
